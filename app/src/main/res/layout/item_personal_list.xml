@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+        <import type="android.view.View"/>
+        <variable
+            name="position"
+            type="Integer" />
+        <variable
+            name="adapter"
+            type="com.lega.base.core.base.recycler.BaseRvAdapter" />
+
+        <variable
+            name="item"
+            type="com.lega.base.domain.models.Personal" />
+
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/item_personal_card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="8dp"
+        android:layout_marginHorizontal="20dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/personal_img"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_margin="5dp"
+                loadImage="@{item.img}"
+                placeHolder="@{@drawable/person1}"
+                tools:src="@drawable/person1"
+                app:cardCornerRadius="8dp"
+                app:cardElevation="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tile_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:text="Nombres"
+                    android:textSize="10dp"
+                    android:textStyle="bold"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/personal_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{item.nombres +' '+ item.apellidos}"
+                    tools:text="HOTEL UNO" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/title_cargo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cargo"
+                    android:layout_margin="5dp"
+                    android:textSize="10dp"
+                    android:textStyle="bold"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/personal_cargo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{item.cargo}"
+                    tools:text="HOTEL UNO" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tile_estacion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Estacion"
+                    android:layout_margin="2dp"
+                    android:textSize="10dp"
+                    android:textStyle="bold"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/personal_estacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{item.estacion}"
+                    tools:text="HOTEL UNO" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tile_bp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="BP"
+                    android:layout_margin="2dp"
+                    android:textSize="10dp"
+                    android:textStyle="bold"/>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/personal_bp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@{item.bp}"
+                    tools:text="HOTEL UNO" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+</layout>

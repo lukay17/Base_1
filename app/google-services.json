@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "375232276710",
+    "project_id": "base-67fae",
+    "storage_bucket": "base-67fae.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:375232276710:android:f59489435d91a2dd4fb327",
+        "android_client_info": {
+          "package_name": "com.lega.base"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "375232276710-p7cv6sqtjqnsr0e2ak92g7q3ab63jo7g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC-60TAWdI-HFHIVOTQP_Gup57_oG90DP4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "375232276710-p7cv6sqtjqnsr0e2ak92g7q3ab63jo7g.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
