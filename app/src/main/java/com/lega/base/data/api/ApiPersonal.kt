@@ -17,4 +17,14 @@ interface ApiPersonal {
     @POST("/latam-ec/oma/entrenamiento/personal/delete/{id}")
     suspend fun deletePersonal(@Path("id")id:Int):Persona
 
+
+
+    /*@GET("/AndroidXAMPP/webServices/readusersGet.php")
+    suspend fun getListPersonal(): PersonalResponse
+
+    @GET("/AndroidXAMPP/webServices/readUserPost.php?id_user={id}")
+    suspend fun getPersonalId(@Path("id")id:Int): Persona
+
+    @POST("AndroidXAMPP/webServices/deleteUserGet.php?id_user={id}")
+    suspend fun deletePersonal(@Path("id")id:Int):Persona*/
 }

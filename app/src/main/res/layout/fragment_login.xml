@@ -130,6 +130,30 @@
             app:lottie_loop="true"
             app:lottie_url="https://assets8.lottiefiles.com/packages/lf20_tmnc73b6.json" />
 
+        <!--<Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonSuccess"
+            android:textSize="16sp"
+            android:text="Success"
+            tools:ignore="ButtonStyle"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonWarning"
+            android:layout_marginLeft="150dp"
+            android:textSize="16sp"
+            android:text="Warning"
+            tools:ignore="ButtonStyle"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonError"
+            android:layout_marginLeft="300dp"
+            android:textSize="16sp"
+            android:text="Error"
+            tools:ignore="ButtonStyle"/>-->
+
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
 </layout>

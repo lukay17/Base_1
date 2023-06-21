@@ -15,6 +15,8 @@ class BaseRvAdapter<T : Any>(
     items: List<T>? = emptyList(),
     private val viewmodel: BaseViewModel? = null,
     private val itemClick: OnClickItem<T>,
+    //private val onClickUpdate: OnClickItem<T>,
+    //private val onClickDelete: OnClickItem<T>
 ) : RecyclerView.Adapter<RecyclerView.ViewHolder>() {
 
     var items: List<T> by Delegates.observable(items ?: emptyList()) { _, old, new ->

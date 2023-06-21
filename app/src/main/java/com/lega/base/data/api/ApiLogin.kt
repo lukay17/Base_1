@@ -22,4 +22,10 @@ interface ApiLogin {
         @FieldMap params:Map<String, String>
     ): UserResponse
 
+
+    /*@FormUrlEncoded
+    @POST("AndroidXAMPP/webServices/loginUserPost.php")
+    suspend fun logInUser(
+        @FieldMap params:Map<String, String>
+    ): UserResponse*/
 }
