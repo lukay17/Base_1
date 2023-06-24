@@ -18,7 +18,6 @@ import com.lega.base.ui.utils.CustomToast
 import com.lega.base.ui.vm.DetailViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
-
 @AndroidEntryPoint
 class DetailFragment: BaseFragmentDb<FragmentDetailBinding, DetailViewModel>() {
 
@@ -54,7 +53,9 @@ class DetailFragment: BaseFragmentDb<FragmentDetailBinding, DetailViewModel>() {
         dataBinding.btnUpdate.setOnClickListener {
             //openwinDialog()
             //openloseDialog()
-            viewModel.getPersonalId(args.personal.id)
+            //viewModel.getPersonalId(args.personal.id)
+            val directions1 = DetailFragmentDirections.toAddUpdateFragment(args.personal)
+            navigate(directions1)
         }
     }
 

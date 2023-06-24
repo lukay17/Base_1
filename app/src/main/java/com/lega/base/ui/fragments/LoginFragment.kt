@@ -30,7 +30,7 @@ class LoginFragment : BaseFragmentDb<FragmentLoginBinding, LoginViewModel>() {
     var dialog: Dialog? = null
 
     override fun eventListeners() {
-        dataBinding.buttonSuccess.setOnClickListener {
+        /*dataBinding.buttonSuccess.setOnClickListener {
             showSuccessDialog()
         }
         dataBinding.buttonError.setOnClickListener {
@@ -38,7 +38,7 @@ class LoginFragment : BaseFragmentDb<FragmentLoginBinding, LoginViewModel>() {
         }
         dataBinding.buttonWarning.setOnClickListener {
             showWarningDialog()
-        }
+        }*/
     }
 
     override fun setBindingLayout() {

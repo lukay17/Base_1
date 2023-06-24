@@ -148,10 +148,5 @@
                 android:background="@color/error"
                 android:text="Delete"/>
         </LinearLayout>
-
-
     </com.google.android.material.card.MaterialCardView>
-
-
-
 </layout>

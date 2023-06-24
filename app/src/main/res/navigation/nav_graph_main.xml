@@ -24,6 +24,7 @@
       <argument
           android:name="personal"
           app:argType="com.lega.base.domain.models.Personal" />
+
       <action
           android:id="@+id/to_personalList"
           app:destination="@id/personalList" />
