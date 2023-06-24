@@ -105,5 +105,3 @@ g
 7app/src/main/java/com/lega/base/data/api/ApiPersonal.kt,3\8\38aa398fc129813156f6618f2f4dc76640e8b59e
 s
 Capp/src/main/java/com/lega/base/core/base/recycler/BaseRvAdapter.kt,7\6\7637272f3c3029c553e82dcfa420a2d745831ede
-m
-=app/src/main/java/com/lega/base/ui/fragments/LoginFragment.kt,7\4\74bd798a18654dcb889e7e99cbb014d26a1ee564
