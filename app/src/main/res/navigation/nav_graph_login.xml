@@ -17,6 +17,9 @@
                 app:argType="com.lega.base.domain.models.User"
                 app:nullable="true" />
         </action>
+        <action
+            android:id="@+id/to_addUpdateFragment"
+            app:destination="@id/addUpdateFragment" />
     </fragment>
     <activity
         android:id="@+id/mainActivity"
@@ -28,5 +31,10 @@
             app:nullable="true"
             android:defaultValue="@null" />
     </activity>
+    <fragment
+        android:id="@+id/addUpdateFragment"
+        android:name="com.lega.base.ui.fragments.AddUpdateFragment"
+        android:label="AddUpdateFragment"
+        tools:layout="@layout/fragment_add_update"/>
 
 </navigation>

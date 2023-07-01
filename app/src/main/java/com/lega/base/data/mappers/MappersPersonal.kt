@@ -10,22 +10,24 @@ fun PersonalResponse.matToPersonal() =
         Personal(
             id = it?.id ?: 0,
             img = it?.img?.split("?")?.get(0)?:"",
-            nombres = it?.nombres ?:"",
-            apellidos = it?.apellidos  ?: "",
-            cargo = it?.cargo ?:"",
-            estacion = it?.estacion ?: "",
-            bp = it?.bp ?:"",
+            name = it?.name ?:"",
+            dni = it?.dni ?:"",
+            nationality = it?.nationality  ?: "",
+            organization = it?.organization ?:"",
+            position = it?.position ?: "",
+            phone = it?.phone ?:""
         )
     }.orEmpty()
 
 fun Persona.matToPersonalId() = Personal(
     id = this.id ?: -1,
     img =this.img ?: "",
-    nombres = this?.nombres ?:"",
-    apellidos = this?.apellidos?:"",
-    cargo = this?.cargo ?:"",
-    estacion = this?.estacion?: "",
-    bp = this?.bp ?:""
+    name = this?.name ?:"",
+    dni = this?.dni?:"",
+    nationality = this?.nationality ?:"",
+    organization = this?.organization?: "",
+    position = this?.position ?:"",
+    phone = this?.phone ?:""
 )
 
 

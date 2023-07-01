@@ -8,23 +8,13 @@ import retrofit2.http.*
 
 interface ApiPersonal {
 
-    @GET("/latam-ec/oma/entrenamiento/personal/list")
+    @GET("/personal/control/list")
     suspend fun getListPersonal(): PersonalResponse
 
-    @GET("/latam-ec/oma/entrenamiento/personal/view/{id}")
+    @GET("/personal/control/views/{id}")
     suspend fun getPersonalId(@Path("id")id:Int): Persona
 
-    @POST("/latam-ec/oma/entrenamiento/personal/delete/{id}")
+    @POST("/personal/control/delet/{id}")
     suspend fun deletePersonal(@Path("id")id:Int):Persona
 
-
-
-    /*@GET("/AndroidXAMPP/webServices/readusersGet.php")
-    suspend fun getListPersonal(): PersonalResponse
-
-    @GET("/AndroidXAMPP/webServices/readUserPost.php?id_user={id}")
-    suspend fun getPersonalId(@Path("id")id:Int): Persona
-
-    @POST("AndroidXAMPP/webServices/deleteUserGet.php?id_user={id}")
-    suspend fun deletePersonal(@Path("id")id:Int):Persona*/
 }

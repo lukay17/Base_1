@@ -10,18 +10,21 @@ data class Persona (
     @field:SerializedName("img")
     val img: String? = null,
 
-    @field:SerializedName("nombres")
-    val nombres: String? = null,
+    @field:SerializedName("name")
+    val name: String? = null,
 
-    @field:SerializedName("apellidos")
-    val apellidos: String? = null,
+    @field:SerializedName("dni")
+    val dni: String? = null,
 
-    @field:SerializedName("cargo")
-    val cargo: String? = null,
+    @field:SerializedName("nationality")
+    val nationality: String? = null,
 
-    @field:SerializedName("nombre")
-    val estacion: String? = null,
+    @field:SerializedName("organization")
+    val organization: String? = null,
 
-    @field:SerializedName("bp")
-    val bp: String? = null
+    @field:SerializedName("position")
+    val position: String? = null,
+
+    @field:SerializedName("phone")
+    val phone: String? = null
 )

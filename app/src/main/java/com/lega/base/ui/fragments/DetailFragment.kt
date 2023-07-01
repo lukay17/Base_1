@@ -67,10 +67,10 @@ class DetailFragment: BaseFragmentDb<FragmentDetailBinding, DetailViewModel>() {
         with(dataBinding) {
             val drawable = resources.getDrawable(R.drawable.person1)
             personalImg.loadImage(args.personal.img, drawable)
-            personalName.setText(args.personal.nombres.toString() + ' ' + args.personal.apellidos.toString())
-            personalCargo.setText(args.personal.cargo.toString())
-            personalEstacion.setText(args.personal.estacion.toString())
-            personalBp.setText(args.personal.bp.toString())
+            personalName.setText(args.personal.name.toString())
+            personalOrganization.setText(args.personal.organization.toString())
+            personalNationality.setText(args.personal.nationality.toString())
+            personalPosition.setText(args.personal.position.toString())
         }
     }
 

@@ -18,10 +18,6 @@ class AddUpdateFragment: BaseFragmentDb<FragmentAddUpdateBinding, AddUpdateViewM
     val args: AddUpdateFragmentArgs by navArgs()
 
     override fun eventListeners(){
-        dataBinding.btnBack.setOnClickListener{
-            val directions = AddUpdateFragmentDirections.toDetailFragment(args.personal)
-            navigate(directions)
-        }
 
     }
 
@@ -30,8 +26,7 @@ class AddUpdateFragment: BaseFragmentDb<FragmentAddUpdateBinding, AddUpdateViewM
     }
 
     override fun initViewModels(){
-        val nombre:String = args.personal.nombres
-        Log.e(TAG, args.personal.nombres.toString())
+
     }
 
 

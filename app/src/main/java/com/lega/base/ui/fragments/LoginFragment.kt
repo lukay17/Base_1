@@ -39,6 +39,11 @@ class LoginFragment : BaseFragmentDb<FragmentLoginBinding, LoginViewModel>() {
         dataBinding.buttonWarning.setOnClickListener {
             showWarningDialog()
         }*/
+        dataBinding.btnRegister.setOnClickListener {
+
+            val directions = LoginFragmentDirections.toAddUpdateFragment()
+            navigate(directions)
+        }
     }
 
     override fun setBindingLayout() {

@@ -39,7 +39,7 @@ class HomeFragment : BaseFragmentDb<FragmentHomeBinding, HomeViewModel>() {
                     initViewModels()
                 }else {
                     val personalFiltered = adapter.items.filter { personal ->
-                        personal.apellidos.lowercase()
+                        personal.name.lowercase()
                             .contains(personalFilter.toString().lowercase())
                     }
                     adapter.updateAdapter(personalFiltered)

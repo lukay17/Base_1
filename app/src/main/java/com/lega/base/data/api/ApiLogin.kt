@@ -5,27 +5,21 @@ import retrofit2.http.*
 
 interface ApiLogin {
 
-    //no funciono
-    /*@POST("/latam-ec/login/intro/")
-    suspend fun logInUser(
-        @Body arguments:Map<String, String>
-    ): UserResponse*/
-
     //funciono
     //@GET("/latam-ec/login/intro/{username}/{password}")
     //suspend fun logInUser(@Path("username")username:String, @Path("password") password:String):UserResponse
 
     //funciono
     @FormUrlEncoded
-    @POST("/latam-ec/login/intro/")
+    @POST("/login/intro/")
     suspend fun logInUser(
         @FieldMap params:Map<String, String>
     ): UserResponse
 
 
     /*@FormUrlEncoded
-    @POST("AndroidXAMPP/webServices/loginUserPost.php")
-    suspend fun logInUser(
+    @POST("/login/registre")
+    suspend fun registerUser(
         @FieldMap params:Map<String, String>
     ): UserResponse*/
 }

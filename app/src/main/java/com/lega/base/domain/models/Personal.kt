@@ -5,5 +5,11 @@ import kotlinx.parcelize.Parcelize
 
 //data class Personal(val img: String, val name: String= "", val cargo: String, val estacion: String)
 @Parcelize
-data class Personal(val id: Int, val img :String, val nombres: String, val apellidos: String= "", val cargo: String, val estacion: String, val bp: String):
-    Parcelable
+data class Personal(val id: Int,
+                    val img :String,
+                    val name: String = "",
+                    val dni: String,
+                    val nationality:String,
+                    val organization:String,
+                    val position: String,
+                    val phone: String): Parcelable
